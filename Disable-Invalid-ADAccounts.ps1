@@ -16,9 +16,9 @@
 #
 #########################################################
 
+param(
 # - days : disable all inactive accounts for X days or more.
 #          If set is -1, it won't disable anything. Default is 180.
-param(
 [Parameter(Mandatory=$false)] [int] $days = 180,
 
 # -deleteDays : delete all previously disabled users since X days or more.
