@@ -1,5 +1,5 @@
 # Disable-Inactive-ADAccounts
-A small Powershell script that disables all the Active Directory user accounts inactive for more than N days (and/or deletes those that have been disabled more than Y days ago).
+A small Powershell script that disables all the Active Directory user accounts inactive for more than X days (and/or deletes those that have been disabled more than Y days ago).
 
 ## Usage
 To disable all AD users that has been inactive for 180 days or more (without deleting them):
