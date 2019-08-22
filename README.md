@@ -22,6 +22,10 @@ To disable all AD users that has been inactive for 180 days or more and also del
 Same thing as before, plus creating a `logFile.csv` file containing a list of all disabled users and a `deleteLogFile.csv` file containing a list of all deleted users:
 
     > powershell .\Disable-Invalid-ADAccounts.ps1 -days 180
+    
+In case you get permissions issues when disabling/deleting AD users, you can bypass them using the Bypass Execution Policy Flag in the following way:
+
+    > powershell -ExecutionPolicy Bypass -File Disable-Invalid-ADAccounts.ps1
 
 ## License
 Licensed under GNU - General Public License, v3.0 - https://www.gnu.org/licenses/gpl-3.0.en.html
